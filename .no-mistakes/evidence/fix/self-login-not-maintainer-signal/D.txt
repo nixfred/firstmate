@@ -1,0 +1,4 @@
+== Scenario D: a hanging 'gh api user' stays inside the poll budget and never blocks the observation ==
+budget=20 rc=0 elapsed=5.48s checked_at=2026-09-16T08:00:00Z error=null pending=["maintainer"]
+budget=3  rc=0 elapsed=3.26s checked_at=2026-09-15T08:00:00Z error=null pending=[]
+ok - hung self lookup is capped at 5s (or the remaining budget); default budget still observes the PR, a 3s budget stays bounded and is left unmeasured, never unavailable

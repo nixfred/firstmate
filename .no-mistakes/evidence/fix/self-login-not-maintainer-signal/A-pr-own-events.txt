@@ -1,0 +1,12 @@
+== Scenario A: PR - own-login comment, review and inline comment never wake; another maintainer does ==
+-- watcher check output:
+contribution-wake: check: contributions delivery 19a71bc8da8fab370139d090019b6da3221095a5befb23ee72c432c4f5e1d3e2
+-- fm-contributions.sh pending:
+{"type":"comment","author":"maintainer","body":"Please clarify"}
+-- seen tokens in durable record:
+["comment:21:2026-09-16T08:02:00Z:","comment:22:2026-09-16T08:03:00Z:","review:31:2026-09-16T08:02:30Z:COMMENTED","review-comment:41:2026-09-16T08:02:40Z:"]
+-- wake queue lines: 1
+-- gh api user calls this home (2 polls): 2
+prompt=1 notifier=1 :: api user --jq .login
+prompt=1 notifier=1 :: api user --jq .login
+ok - own-login comment/review/inline stay out of pending (but in seen); MEMBER comment pends and wakes once

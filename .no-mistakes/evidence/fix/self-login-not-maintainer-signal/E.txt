@@ -1,0 +1,5 @@
+== Scenario E: once seen under a known login, own comments do not re-wake when the lookup later fails ==
+contribution-wake: check: contributions delivery 19a71bc8da8fab370139d090019b6da3221095a5befb23ee72c432c4f5e1d3e2
+poll 1 (login=selfuser): wakes=1 pending=["maintainer"]
+poll 2 (lookup fails):   wakes=1 pending=["maintainer"]
+ok - own comment stayed in seen; failed lookup on the next poll produced no new wake

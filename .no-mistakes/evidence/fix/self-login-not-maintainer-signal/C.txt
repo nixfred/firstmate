@@ -1,0 +1,7 @@
+== Scenario C: unknown or hostile login keeps the previous behaviour and never fails the poll ==
+login mode='fail'         poll rc=0 error=null pending authors=["selfuser","maintainer"]
+login mode='empty'        poll rc=0 error=null pending authors=["selfuser","maintainer"]
+login mode='self user'    poll rc=0 error=null pending authors=["selfuser","maintainer"]
+login mode='selfuser;rm'  poll rc=0 error=null pending authors=["selfuser","maintainer"]
+login mode='../selfuser'  poll rc=0 error=null pending authors=["selfuser","maintainer"]
+ok - unknown/invalid login: poll succeeds, no error recorded, both comments pend exactly as before the change

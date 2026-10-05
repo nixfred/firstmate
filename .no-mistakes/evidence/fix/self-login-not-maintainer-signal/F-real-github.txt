@@ -1,0 +1,8 @@
+== Scenario F: real GitHub, real gh login (nixfred) - read-only poll of https://github.com/nixfred/blip/issues/78 ==
+   (repo owned by the home's own login; comments: Kb2uka/CONTRIBUTOR, nixfred/OWNER, Kb2uka/CONTRIBUTOR, Kb2uka/CONTRIBUTOR, nixfred/OWNER, nixfred/OWNER)
+contribution-wake: check: contributions filed 055de58ea064c0b32b0dc00ef949ea4d5ef64a6931422c1fbb19be6839f25b81
+contribution-wake: check: contributions filed be2e526450a5625ffb744dc6bbd88971ff59e69d5a7e2ec964443b3e8b0a9696
+contribution-wake: check: contributions filed 6a80e9c0c3680045fa80db3c5af9f02d0b5f013c60e8e8e3cf2250eb87e22ccb
+[base @ base] poll rc=0 error=null observed events=["nixfred","nixfred","nixfred"] pending=["nixfred","nixfred","nixfred"]
+[head @ head] poll rc=0 error=null observed events=["nixfred","nixfred","nixfred"] pending=[]
+ok - real forge: base f470a01 pended 3 own-login OWNER comment(s) (the reported noise); this change pends 0

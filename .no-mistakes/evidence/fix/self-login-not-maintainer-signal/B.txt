@@ -1,0 +1,7 @@
+== Scenario B: issue path - own-login issue comment never wakes; a COLLABORATOR comment does; one self lookup per poll across 2 URLs ==
+contribution-wake: check: contributions filed 0f5891d4a385fcf4b35c266a1b45cffbeac849212ebc3eff8a7dcb948274ea08
+contribution-wake: check: contributions delivery ee14038336f7bef9395592186920e97a6f75a9538adf7f44fd6ec1c03de143d9
+-- filed (issue) record pending:
+{"url":"https://github.com/o/r/issues/9","pending":[{"author":"collab","body":"Can you add a repro?"}]}
+-- gh api user calls in this one poll (2 live URLs): 1
+ok - issue: own-login comment filtered, collaborator comment pending; self lookup ran once for two URLs
